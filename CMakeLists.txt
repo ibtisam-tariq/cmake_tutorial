@@ -5,10 +5,9 @@ project(Tutorial_Project)
 set(CMAKE_CXX_FLAGS "-std=c++0x -Wall")
 # or 
 # add_definitions(-Wall -std=c++0x)
-add_executable(mainexe src/Main.cpp)
 
-# set executable output directory
-set_target_properties(mainexe PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+# add subdirectory
+add_subdirectory(src)
 
 #Show output on terminal during cmake command
 message("${CMAKE_CURRENT_SOURCE_DIR} , ${PROJECT_SOURCE_DIR}, ${PROJECT_BINARY_DIR}")
